@@ -21,7 +21,9 @@ export function useLogin() {
             redirect('/');
         },
         onError: (err) => {
-            toast.error('Provided login and password seems to be incorrect');
+            toast.error(
+                'Provided login and password seems to be incorrect or some other problem appears'
+            );
         },
     });
 
